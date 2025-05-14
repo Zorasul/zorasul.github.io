@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Width Buttons</title>
+<style>
+  body {
+    margin: 0; /* hej nana */
+    font-family: sans-serif;
+  }
+
+  .button-container {
+    display: flex; 
+    width: 100%;   
+    box-sizing: border-box; 
+  }
+
+  .button {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box; 
+    height: 100vh;
+  }
+
+  .button-40 {
+    width: 40%;
+  }
+
+  .button-20 {
+    width: 20%;
+  }
+
+  .button + .button {
+    margin-left: 2px; 
+  }
+  .image{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .buttontext{
+    z-index: 2; 
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+</head>
+<body>
+<!-- Hej nana -->
+<div class="button-container">
+  <button class="button button-40">
+    <div class = "buttontext">Graphic</div>
+    <img src = "test.png" class = "image">
+  </button>
+
+  <button class="button button-20">CV</button>
+  <button class="button button-40">art</button>
+</div>
+
+</body>
+</html>
